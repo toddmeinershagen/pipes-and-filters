@@ -2,6 +2,27 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.9.0</Version>
+    <Company>Todd Meinershagen</Company>
+    <Description>A base library to implement the pipes and filters pattern in an async fashion in .NET.</Description>
+    <Copyright>Copyright © 2020</Copyright>
+    <Authors>Todd Meinershagen</Authors>
+    <PackageProjectUrl>https://github.com/toddmeinershagen/pipes-and-filters/blob/master/README.md</PackageProjectUrl>
+    <PackageIcon>pipe-with-filter.png</PackageIcon>
+    <PackageIconUrl />
+    <RepositoryType>GitHub</RepositoryType>
+    <PackageTags>pipe pipes pipeline filter filters pattern patterns</PackageTags>
+    <RepositoryUrl>https://github.com/toddmeinershagen/pipes-and-filters</RepositoryUrl>
+    <PackageReleaseNotes>* Initial release</PackageReleaseNotes>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\images\pipe-with-filter.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
