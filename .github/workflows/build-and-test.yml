@@ -1,5 +1,4 @@
-name: Build and Test Solution
-
+name: Build, Test, and Deploy PipesAndFilters
 on:
   pull_request:
   push:
