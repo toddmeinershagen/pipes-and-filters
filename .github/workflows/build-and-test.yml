@@ -1,34 +1,23 @@
-name: .NET Core
+name: Build and Test Solution
 
 on:
+  pull_request:
   push:
     branches:
       - master
-  pull_request:
-    branches:
-      - '*'
 
 jobs:
   build:
     runs-on: ubuntu-latest
     
     steps:
-    - name: checkout code
-      uses: actions/checkout@v2
-
-    - name: Setup .NET Core
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: 3.1.101
-
-    - name:  Navigate to source
-      run: cd src
-
-    - name: Install dependencies
-      run: dotnet restore
-
-    - name: Build
-      run: dotnet build --configuration Release --no-restore
-
-    - name: Test
-      run: dotnet test --no-restore --verbosity normal
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 3.1.101
+      - run: cd src
+      - run: dotnet restore
+      - run: dotnet build --configuration Release --no-restore
+      - run: dotnet test --no-restore --verbosity normal
