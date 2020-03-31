@@ -1,4 +1,4 @@
-name: Build, Test, and Deploy PipesAndFilters
+name: Build, Test, and Publish
 on:
   pull_request:
   push:
