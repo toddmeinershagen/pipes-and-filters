@@ -30,7 +30,7 @@ jobs:
       - name: publish
         run: |
           cd src
-          donet nuget push PipesAndFilters/bin/Release/*.nupkg -k $NUGET_AUTH_TOKEN -s $SOURCE_URL
+          dotnet nuget push PipesAndFilters/bin/Release/*.nupkg -k $NUGET_AUTH_TOKEN -s $SOURCE_URL
         env:
           SOURCE_URL: https://api.nuget.org/v3/index.json
           NUGET_AUTH_TOKEN:  ${{secrets.NUGET_AUTH_TOKEN}}
