@@ -17,6 +17,7 @@ jobs:
         uses: actions/setup-dotnet@v1
         with:
           dotnet-version: 3.1.101
+          source-url:  
       - name: build
         run: |
           cd src
@@ -26,12 +27,10 @@ jobs:
         run: |
           cd src
           dotnet test --no-restore --verbosity normal
-      - uses: actions/setup-dotnet@v1
-        with:
-          source-url: https://api.nuget.org/v3/index.json
-        env:  
-          NUGET_AUTH_TOKEN:  ${{secrets.NUGET_AUTH_TOKEN}}
       - name: publish
         run: |
           cd src
-          donet nuget push PipesAndFilters/bin/Release/*.nupkg 
+          donet nuget push PipesAndFilters/bin/Release/*.nupkg -k $NUGET_AUTH_TOKEN -s $SOURCE_URL
+        env:
+          SOURCE_URL: https://api.nuget.org/v3/index.json
+          NUGET_AUTH_TOKEN:  ${{secrets.NUGET_AUTH_TOKEN}}
