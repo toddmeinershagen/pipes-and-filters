@@ -1,9 +1,10 @@
-﻿using System;
+﻿using Patterns.PipesAndFilters;
+using System;
 using System.Linq;
 
-namespace PipesAndFilters.Tests
+namespace Patterns.PipesAndFilters.Tests.Filters
 {
-    public class Reverse : SyncFilterBase<string>
+	public class Reverse : SyncFilterBase<string>
 	{
 		protected override string OnExecute(string input)
 		{

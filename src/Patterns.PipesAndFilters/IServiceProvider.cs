@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace PipesAndFilters
+﻿namespace Patterns.PipesAndFilters
 {
     public interface IServiceProvider
     {

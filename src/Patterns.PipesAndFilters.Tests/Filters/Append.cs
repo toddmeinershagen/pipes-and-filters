@@ -1,12 +1,14 @@
-﻿namespace PipesAndFilters.Tests
+﻿using Patterns.PipesAndFilters;
+
+namespace Patterns.PipesAndFilters.Tests.Filters
 {
-    public class Append : SyncFilterBase<string>
+	public class Append : SyncFilterBase<string>
 	{
 		private readonly string _text;
 
 		public Append(string text)
 		{
-			this._text = text;
+			_text = text;
 		}
 
 		protected override string OnExecute(string input)

@@ -1,9 +1,11 @@
 using FluentAssertions;
 using NUnit.Framework;
+using Patterns.PipesAndFilters;
+using Patterns.PipesAndFilters.Tests.Filters;
 using System;
 using System.Threading.Tasks;
 
-namespace PipesAndFilters.Tests
+namespace Patterns.PipesAndFilters.Tests
 {
 	[TestFixture]
 	public class PipelineTests

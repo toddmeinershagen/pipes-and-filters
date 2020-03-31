@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace PipesAndFilters
+namespace Patterns.PipesAndFilters
 {
     public class Pipeline<T> : IPipeline<T>
     {
@@ -12,7 +12,7 @@ namespace PipesAndFilters
 
         public Pipeline(IServiceProvider serviceProvider)
         {
-            this._serviceProvider = serviceProvider ?? throw new ArgumentNullException(nameof(serviceProvider));
+            _serviceProvider = serviceProvider ?? throw new ArgumentNullException(nameof(serviceProvider));
         }
 
         public Pipeline()

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PipesAndFilters
+namespace Patterns.PipesAndFilters
 {
     public class ActivatorServiceProvider : IServiceProvider
     {

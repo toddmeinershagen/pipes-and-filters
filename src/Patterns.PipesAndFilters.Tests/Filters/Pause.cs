@@ -1,16 +1,17 @@
-﻿using System;
+﻿using Patterns.PipesAndFilters;
+using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace PipesAndFilters.Tests
+namespace Patterns.PipesAndFilters.Tests.Filters
 {
-    public class Pause : AsyncFilterBase<string>
+	public class Pause : AsyncFilterBase<string>
 	{
 		private readonly TimeSpan _timeToPause;
 
 		public Pause(TimeSpan timeToPause)
 		{
-			this._timeToPause = timeToPause;
+			_timeToPause = timeToPause;
 		}
 
 		protected override async Task<string> OnExecuteAsync(string input, CancellationToken cancellationToken)

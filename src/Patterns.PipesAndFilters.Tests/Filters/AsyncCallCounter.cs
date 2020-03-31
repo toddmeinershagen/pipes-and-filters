@@ -1,7 +1,8 @@
-﻿using System.Threading;
+﻿using Patterns.PipesAndFilters;
+using System.Threading;
 using System.Threading.Tasks;
 
-namespace PipesAndFilters.Tests
+namespace Patterns.PipesAndFilters.Tests.Filters
 {
     public class AsyncCallCounter : AsyncFilterBase<string>
     {

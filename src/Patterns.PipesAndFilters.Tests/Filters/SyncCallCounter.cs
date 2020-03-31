@@ -1,4 +1,6 @@
-﻿namespace PipesAndFilters.Tests
+﻿using Patterns.PipesAndFilters;
+
+namespace Patterns.PipesAndFilters.Tests.Filters
 {
     public class SyncCallCounter : SyncFilterBase<string>
     {

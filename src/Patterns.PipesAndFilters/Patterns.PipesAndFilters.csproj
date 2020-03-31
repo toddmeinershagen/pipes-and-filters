@@ -16,6 +16,8 @@
     <RepositoryUrl>https://github.com/toddmeinershagen/pipes-and-filters</RepositoryUrl>
     <PackageReleaseNotes>* Initial release</PackageReleaseNotes>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <AssemblyName>Patterns.PipesAndFilters</AssemblyName>
+    <RootNamespace>Patterns.PipesAndFilters</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

@@ -1,7 +1,7 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 
-namespace PipesAndFilters
+namespace Patterns.PipesAndFilters
 {
     public interface IAsyncFilter<T>
     {

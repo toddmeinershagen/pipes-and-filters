@@ -1,10 +1,11 @@
 ﻿using FluentAssertions;
 using NUnit.Framework;
+using Patterns.PipesAndFilters.Tests.Filters;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace PipesAndFilters.Tests
+namespace Patterns.PipesAndFilters.Tests
 {
     [TestFixture]
     public class given_a_derived_sync_filter_and_cancelled_token_when_executing
