@@ -1,5 +1,5 @@
 [![Patterns.PipesAndFilters](https://badge.fury.io/nu/Patterns.PipesAndFilters.svg)](https://badge.fury.io/nu/Patterns.PipesAndFilters)
-[![Github Actions](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Ftoddmeinershagen%2Fpipes-and-filters%2Fbadge&label=build&logo=none)](https://actions-badge.atrox.dev/toddmeinershagen/pipes-and-filters/goto?ref=master)
+![Build, Test, and Publish](https://github.com/toddmeinershagen/pipes-and-filters/workflows/Build,%20Test,%20and%20Publish/badge.svg)
 
 # pipes-and-filters
 This is a base library to implement an in-process, asynchronous implementation of the pipes and filters pattern in .NET Core.  
